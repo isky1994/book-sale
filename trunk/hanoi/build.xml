@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<project name="hanoi" default="compile" basedir="."> 
+
+       
+	<target name="init">
+			<mkdir dir="build/classes" />
+			<mkdir dir="dist" />
+	</target>
+	<target name="compile" depends="init" >
+		<javac srcdir="src" destdir="build/classes" 
+		includeantruntime="on"/>
+	</target>
+	<target name="clean" depends="init">
+	</target>
+
+</project>
